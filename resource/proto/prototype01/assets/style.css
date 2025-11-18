@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: antiquewhite;
+}
+.navbar-container{
+    display: flex;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    
+}
+li{
+    list-style: none;
+    background-color: aquamarine;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+a:hover{
+    color: aqua;
+}
+.content-container {
+    border: 1 solid black;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    width: 90%;
+    height: 10%;
+}
+.content-container p{
+    margin: 0 10px;
+}

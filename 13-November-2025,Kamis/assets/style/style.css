@@ -1,0 +1,72 @@
+:root{
+    --primary: #51F2F5 ;
+    --secondary: #54c9d8 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+
+/* navbar  */
+nav{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+nav .navbar-nav {
+    display: block;
+    padding: 1rem 1rem;
+}
+nav .navbar-nav a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+nav .navbar-nav a:hover{
+    color: whitesmoke;
+}
+nav .logo{
+    padding: 1rem ;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: rgb(8, 8, 8);
+}
+nav .logo span{
+    color: rgb(10, 99, 232);
+}
+
+/* konten */
+.container{
+    display: flex;
+    margin: 0 2rem;
+    gap: 4rem;
+}
+.container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vw;
+}
+.container .image img{
+    max-width: 70rem;
+    border-radius: 5px;
+}
+.container .content h1{
+    margin-bottom: 0.3rem;
+    font-size: 2.3rem;
+}
+.container .content h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container .content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}

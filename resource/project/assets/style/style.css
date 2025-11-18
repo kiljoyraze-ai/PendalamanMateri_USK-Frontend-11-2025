@@ -1,0 +1,276 @@
+:root{
+    --primary: #FF5666;
+    --bg: #222436;
+    --secondary: #23263A;
+    --font: #fff;
+    --btn: #DB2600;
+    --footer: rgb(60, 60, 60);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body{
+    background-color:var(--bg); 
+    min-height: 100vw;
+    overflow: hidden;
+
+}
+
+/* navbar */
+.navbar{
+    margin: 0 ;
+    padding: 0 0.4rem;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary);
+}
+.navbar-nav a{
+    display: inline-block;
+    color: aliceblue;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.logo{
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-style: italic;
+}
+.logo span{
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Content  */
+main{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.card{
+    background-color: rgb(101, 99, 96);
+    max-width: 25rem;
+    margin: 1.2rem auto;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary);
+    margin: 0.5rem 0.5rem;
+    padding: 0;
+}
+.card-header img{
+    border-radius: 10%;
+    max-width: 10rem;
+    margin: 0;
+    padding: 0;
+}
+.card-content{
+    margin:2rem 0.4rem;
+}
+.card-content p{
+    margin: 1rem 0;
+}
+
+/* footer  */
+footer{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    margin: 0;
+    background-color: var(--footer);
+}
+footer .links{
+    margin: 1rem 0;
+    padding: 0;
+}
+footer .links a{
+    color: aliceblue;
+    font-size: 0.7rem;
+    margin: 1rem 0.5rem 0;
+}
+footer .links a:hover{
+    text-decoration:underline ;
+
+}
+footer .credit a{
+    font-size: 1rem;
+    color: var(--primary);
+}
+footer .credit {
+    font-size:0.8rem ;
+}
+
+/* contact */
+.card-contact{
+    padding: 1rem;
+    margin: 0 7rem;
+    background-color: var(--footer);
+    color: var(--font);
+}
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.contact-form button {
+  padding: 10px 16px;
+  background: #146fda;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #125aa6;
+}
+
+
+
+/* home-content */
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 2rem 5rem;
+    /* background-color: var(--footer); */
+   
+}
+.home-img img{
+    max-width: 40rem;
+    border-radius: 100px;
+}
+.home-content p{
+    font-size:1rem ;
+    margin-top: 2rem ;
+}
+.home-content h2{
+    margin: 1rem 0;
+}
+.home-content{
+    margin: 1rem;
+}
+
+.button{
+    margin: 5rem 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.8rem ;
+    margin: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 15rem;
+    border-radius: 10px;
+    border: 2px solid rgb(249, 226, 226);
+    color: #fff;
+    box-shadow: #ccc;
+    text-align: center;
+    background-color: var(--primary);
+}
+.btn:hover{
+    background-color: #DB2600;   
+}
+
+/* about-section */
+.about{
+    color: white;
+    padding: 1rem 7% 1rem;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.about h2 span{
+    color: var(--primary);
+}
+.about .row{
+    display: flex;
+}
+
+.about .row .about-img{
+    flex: 1 1 22rem;
+}
+
+.about .row .about-img img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid red;
+}
+
+.about .row .content p{
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+}
+
+
+
+
+@media(max-width:758px){
+    .home{
+        flex-direction: column;
+    }
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img{
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about .row .content{
+        padding: 0;
+    }
+    .about .row .content h3{
+        font-size: 1.6rem;
+    }
+}
+

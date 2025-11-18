@@ -1,0 +1,48 @@
+:root{
+    --primary: #FF5666;
+    --font: white;
+    --secondary:#23263A;
+    --backgorund:#222436 ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--backgorund);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    background-color: var(--secondary);
+    
+}
+nav .nav-logo a{
+    color: var(--font);
+    font-size: 1.7rem;
+}
+
+nav .nav-logo span{
+    color: var(--primary);
+}
+
+nav .navbar-nav a{
+    color: var(--font);
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+nav .navbar-nav{
+    margin: 0 1rem 0 0;
+}
+
+nav .navbar-nav a:hover{
+    color: var(--primary);
+    transition: 0.8s;
+}

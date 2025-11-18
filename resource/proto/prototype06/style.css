@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+}
+body{
+    background-image: url(img/background.webp);
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:transparent ;
+    padding: 1rem 0;
+}
+
+nav .navbar-nav{
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+nav .navbar-nav a{
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: rgb(19, 10, 10);
+    width: 8rem;
+    text-align: center;
+    background-color: rgb(66, 220, 220);
+}
+nav .navbar-nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+nav .logo {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    
+}
+nav .logo span{
+    color: red;
+}

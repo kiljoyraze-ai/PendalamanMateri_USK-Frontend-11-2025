@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    /* Color */
+    --bluesoft: #f9fbfc;
+    --blue: #3a38ff;
+    --purplesoft: #e5e4fe;
+    --navi: #101041; 
+    --darkgrey: #919493; 
+    --darkgery2: #e7ebed;
+    --grey: #dfe3e7;
+    --softgrey: #f9fbfc;
+    --purple: #626198;
+    --white: #fff;
+    
+    /* font-weight */
+    --fwnextrabold: 800;
+    --fwbold: 700;
+    --fwsemibold: 600;
+    --fwmedium: 500;
+    --fwreguler: 400;
+    --fwlight: 400;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--blue-soft);
+}
+
+/* navbar */
+.navbar-nav .nav-item:hover{
+    color: var(--navi);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item a {
+    color: var(--navi);
+    transition: all 0.3 ease;
+}
+
+.navbar-nav .nav-item {
+    padding-right:10px ;
+    padding-left: 10px;
+    font-weight: var(--fwreguler);
+}
+
+.profile-nav{
+    padding: 3px;
+    background: var(--white) ;
+    border-radius: 50px;
+}
+
+.navbar-brand{
+    font-weight: var(--fwbold);
+    color: var(--navi);
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.big-header{
+    font-weight: var(--fwnextrabold);
+    font-size: 40px;
+}
+.primary-copy{
+    font-weight: var(--fwmedium);
+    margin: 10px 0;
+}
+.btn-primary , .btn-secondary{
+    padding: 13px 40px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+}
+.btn-secondary:hover{
+    background-color: var(--navi);
+    color: var(--white);
+}
+.btn-primary:hover{
+    background-color: var(--navi);
+    color: var(--white);
+}
+
+.img-fluid{
+    border-radius: 10px;
+}
+
