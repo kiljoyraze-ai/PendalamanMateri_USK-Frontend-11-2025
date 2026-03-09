@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary: #5dd62c;
+        --secondary: #0f0f0f;
+      }
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: var(--secondary);
+        height: 1000px;
+      }
+      nav {
+        /* background-color: gray; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 7%;
+        border-bottom: 2px solid var(--primary);
+      }
+      nav .logo {
+        max-width: 4%;
+      }
+      nav .logo img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      .navbar-menus {
+        text-decoration: none;
+        display: flex;
+        max-width: 50%;
+      }
+      .navbar-menus a{
+        font-size: 1.3em;
+        text-decoration: none;
+        color: var(--primary);
+        width: 10rem;
+        text-align: center;
+        background-color: var(--secondary);
+      }
+      .navbar-menus a:hover{
+        color: var(--secondary);
+        background-color: var(--primary);
+        border-radius: 5px;
+      }
+      .copyrights{
+        color: var(--primary);
+        text-decoration: underline;
+        font-style: italic;
+        border: 2px dotted var(--primary);
+        border-radius: 50%;
+        text-align: center;
+        width: 25%;
+      }
+      .container{
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/assets/img/profile-copy.jpg" alt="" />
+      </div>
+      <div class="copyrights">
+        <h2>BRYAN-Nav</h2>
+      </div>
+      <div class="navbar-menus">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="home-welcome">
+                <p>Management Investment are probably its deposit</p>
+            </div>
+            <div class="home-profile">
+
+            </div>
+            <div class="btn">
+                <button></button>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

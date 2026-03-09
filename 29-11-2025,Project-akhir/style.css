@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,600&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 2000px;
+}
+nav{
+    width: 80%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 0;
+    z-index: 100;
+}
+nav .navbar-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1%;
+    background-color: gray;
+    border-radius:  0 0 10px 10px;
+}
+nav .navbar-inner .navbar-logo {
+    font-size: 1.5rem;
+}
+.navbar-menu a{
+    display: inline-block;
+    padding: 1rem ;
+    font-size: 1.2rem;
+    color: black;
+    transition: .5s ease-out;
+}
+.navbar-menu a:hover{
+    background-color: azure;
+    border-radius: 10px;
+}
+/* home-section */
+.home{
+    min-height: 100vh;
+    padding: 10rem 7%;
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100%;
+    width: 100%;
+}
+.home-content .home-text{
+    max-width: 30%;
+    line-height: 2rem;
+}
+.home-content .home-text h1{
+    font-size: 2.9rem;
+    margin-bottom: 1rem;
+}
+.home-content .home-text p{
+    font-size: 1.3rem ;
+    font-weight: 500;
+}
+.home-content .home-text button{
+    width: 50%;
+    margin-top: 1.2rem;
+    display: block;
+    padding: .5rem ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: orange;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.home-text button:hover{
+    scale: 1.1;
+    box-shadow: 2px 5px 2px rgba(255, 255, 255, 0.7); 
+}
+.home-content .home-img img{
+    width: 100%;
+    height: 40vh;
+}
+.home-content .home-img{
+    max-width: 100%;
+}
+/* project-section */
+.project{
+    min-height: 100vh;
+    padding: 8rem 7%;
+}
